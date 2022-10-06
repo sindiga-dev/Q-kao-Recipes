@@ -71,6 +71,9 @@ export default function MealsListProvider({ children }) {
     setFavorites(favorites.filter((favorite) => favorite.idMeal !== id));
   }
 
+
+  //search meals(fetch meals)
+
   function searchMeals(term) {
     const faveListIds =
       favorites.length !== 0
