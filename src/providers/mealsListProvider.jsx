@@ -59,6 +59,7 @@ export default function MealsListProvider({ children }) {
         .catch((error) => console.error(error));
     }
   }
+  //remove from favorites
 
   function removeFromFavorites(id) {
     setMeals(
