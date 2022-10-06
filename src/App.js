@@ -1,12 +1,13 @@
 import { useContext } from 'react';
 import { MealsListContext } from './providers/mealsListProvider';
+
 import Meals from './components/Meals';
 import Favorites from './components/Favorites';
 import Header from './components/Header';
 import styles from './styles/App.module.css';
 import RecipeInfo from './components/RecipeInfo';
 
-unction App() {
+function App() {
   const { favorites, recipe } = useContext(MealsListContext);
 
   return (
@@ -19,18 +20,20 @@ unction App() {
             <div className={styles.favorites}>
               {favorites.length !== 0 ? (
                 <Favorites />
-                ) : (
-                  <p>Your liked recipes will go here.</p>
-                )}
-              </div>
+              ) : (
+                <p>Your liked recipes will go here.</p>
+              )}
             </div>
-          </section>
-          <section className={styles.mealsContainer}>
-            <h2 style={{ width: '100%' }}>Recipe List</h2>
-            <Meals />
-          </section>
-          {recipe && <RecipeInfo {...recipe} />}
-        </main>
-      </div>
-    );
-  }
+          </div>
+        </section>
+        <section className={styles.mealsContainer}>
+          <h2 style={{ width: '100%' }}>Recipe List</h2>
+          <Meals />
+        </section>
+        {recipe && <RecipeInfo {...recipe} />}
+      </main>
+    </div>
+  );
+}
+
+export default App;
