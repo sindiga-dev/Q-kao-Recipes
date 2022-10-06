@@ -11,6 +11,8 @@ export default function MealsListProvider({ children }) {
     
         return lsFavorites !== null ? JSON.parse(lsFavorites) : [];
       });
+
+      //fetch data from the Api
     
       function showRecipeInfo(id) {
         fetch(mealAPI.DETAILS_API + id)
@@ -31,5 +33,8 @@ export default function MealsListProvider({ children }) {
             setRecipe({ ...mealData, ingredients });
           })
           .catch((error) => console.error(error));
+      }
+      function closeRecipeInfo() {
+        setRecipe(null);
       }
     
