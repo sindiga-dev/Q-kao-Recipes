@@ -21,3 +21,24 @@ export default function Header() {
   
       setSearchTerm('');
     }
+    return (
+        <header className={styles.header}>
+          <h1>What To Cook</h1>
+          <div className={styles.searchBar}>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Find recipes..."
+                value={searchTerm}
+                onChange={handleChange}
+              />
+              <button type="submit">
+                <FontAwesomeIcon icon={faSearch} />
+              </button>
+            </form>
+          </div>
+        </header>
+      );
+    }
