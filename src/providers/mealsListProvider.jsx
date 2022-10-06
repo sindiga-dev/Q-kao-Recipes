@@ -12,6 +12,8 @@ export default function MealsListProvider({ children }) {
     return lsFavorites !== null ? JSON.parse(lsFavorites) : [];
   });
 
+  //show the recipe info
+
   function showRecipeInfo(id) {
     fetch(mealAPI.DETAILS_API + id)
       .then((response) => response.json())
@@ -32,10 +34,12 @@ export default function MealsListProvider({ children }) {
       })
       .catch((error) => console.error(error));
   }
-
+//close recipe button
   function closeRecipeInfo() {
     setRecipe(null);
   }
+
+  //add to favorites
 
   function addToFavorites(id) {
     setMeals(
