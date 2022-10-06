@@ -100,6 +100,8 @@ export default function MealsListProvider({ children }) {
       .catch((error) => console.error(error));
   }
 
+  //use effect
+
   useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites));
   }, [favorites]);
@@ -148,3 +150,5 @@ export default function MealsListProvider({ children }) {
     </MealsListContext.Provider>
   );
 }
+
+//debugging
