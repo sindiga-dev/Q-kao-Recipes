@@ -19,11 +19,11 @@ This is a simple React Recipe app, build with React native and Hooks. The applic
 ![myimage-alt-tag](./src/Screenshot%20from%202022-10-07%2007-36-02.png)
 
 ## Installation
--Run npm install
+-Run npm install <br>
 -Run npm start to start the Application
 ### Requirements
 
--Either a computer, Ipad, tablet or phone
+-Either a computer, Ipad, tablet or phone <br>
 -An access to internet connection
 
 ### Installation process
@@ -37,9 +37,9 @@ https://www.themealdb.com/api.php
 
 ### Technology used
 
-- React- Buid structure styling, fetching and adding components
+- React- Buid structure styling, fetching and adding components<br>
 
-- CSS - which was used to style the page
+- CSS - which was used to style the page<br>
 
 - API- i used an api from the mealDB
 
