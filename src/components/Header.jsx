@@ -23,7 +23,7 @@ export default function Header() {
     }
     return (
         <header className={styles.header}>
-          <h1>What To Cook</h1>
+          <h1>QKao Recipes</h1>
           <div className={styles.searchBar}>
             <form onSubmit={handleSubmit}>
               <input
