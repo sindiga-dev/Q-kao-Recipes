@@ -7,6 +7,7 @@ import styles from '../styles/Header.module.css';
 export default function Header() {
     const [searchTerm, setSearchTerm] = useState('');
     const { searchMeals } = useContext(MealsListContext);
+    //search
   
     function handleChange(e) {
       setSearchTerm(e.target.value);
@@ -21,6 +22,8 @@ export default function Header() {
   
       setSearchTerm('');
     }
+
+    //header name
     return (
         <header className={styles.header}>
           <h1>QKao Recipes</h1>

@@ -4,7 +4,7 @@
 
 ## Table of contents
 
-- [Description](#description)
+- [Description](#Description)
 - [Installation Requirement](#Installation)
 - [Installation Instructions](#Installation-Instructions)
 - [Technology Used](#Technology-used)
@@ -16,10 +16,11 @@
 
 This is a simple React Recipe app, build with React native and Hooks. The application allows the user to search for meals of their choice based on meal name, region or main ingredient, and gives them the meal, ingredient and procedure used to make the meal. The app also gives a daily random meal that one can cook. User can also click on favorite meal button to add favorite meals to their list.
 
-![myimage-alt-tag](./images/Screenshot%20from%202022-09-03%2014-11-22.png)
+![myimage-alt-tag](./src/Screenshot%20from%202022-10-07%2007-36-02.png)
 
 ## Installation
-
+-Run npm install
+-Run npm start to start the Application
 ### Requirements
 
 -Either a computer, Ipad, tablet or phone
@@ -27,19 +28,19 @@ This is a simple React Recipe app, build with React native and Hooks. The applic
 
 ### Installation process
 
-[Go back to the top](#Recipe-finder)
+[Go back to the top](#Q-kao-Recipes)
 
 ## Live link
-https://sindiga-dev.github.io/Recipe-finder/
+https://qkao-recipes.netlify.app/
 ## API  
 https://www.themealdb.com/api.php
 
 ### Technology used
 
-- HTML - which was used to build the structure of the page.
+- React- Buid structure styling, fetching and adding components
 
 - CSS - which was used to style the page
-- Javascript - used to bring interactivity in the page
+
 - API- i used an api from the mealDB
 
 ## Reference
