@@ -1,6 +1,6 @@
 # Q-kao-Recipes
 
-###### By Isaac Sindiga
+###### By Isaac Sindiga.
 
 ## Table of contents
 
