@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { MealsListContext } from './providers/mealsListProvider';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 import Meals from './components/Meals';
 import Favorites from './components/Favorites';
